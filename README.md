@@ -63,4 +63,4 @@ To enhance this dataset, we decided to add the family from the taxonomy for each
 ## References
 
 * [Sleep in mammals: ecological and constitutional correlates](https://pubmed.ncbi.nlm.nih.gov/982039/)
-* [A quantitative, theoretical framework for understanding mammalian sleep] (https://pubmed.ncbi.nlm.nih.gov/17215372/)
+* [A quantitative, theoretical framework for understanding mammalian sleep](https://pubmed.ncbi.nlm.nih.gov/17215372/)

@@ -25,43 +25,34 @@ python app.py
 
 ## Functionality
 
-Tha API has 2 endpoints:
-    
-    /train
-This is the request to perform training on a chatbot. To invoke this service navigate to: _localhost:12345/train_.
+This project is plit in 4 repositories parts :
+* 1. Data : The used dataset
+* 2. Sleeping time prediction : a program that predict the sleeping time of a mammal
+* 3. Dreaming Time prediction : a program that predict the dreaming time of a mammal
+* 4. Other correlations explanation : a program that study the relations between general, ecological biological and sleep attributes of a mamal
 
-Mandatory parameters are:
-* **bot_id:** string representation of the chatbot identifier.
-* **model_name:** string name of classification model. For this version, HuggingFace models have been considered but are easily extensible to other machine or deep learning models. 
-* **sentences:** a list of objects containing natural language text and its corresponding intent. This will constitute the dataset that will be split into training and test sets within the service in a seamless way for the user. The data is also resampled prior to splitting to ensure every intent is represented in both splits.
+The data at our disposal to make predictions are from two scientific papers :
+* Allison T, Cicchetti DV. Sleep in mammals: ecological and constitutional correlates. Science. 1976 Nov 12;194(4266):732-4. doi: 10.1126/science.982039. PMID: 982039.
+* Savage VM, West GB. A quantitative, theoretical framework for understanding mammalian sleep. Proc Natl Acad Sci U S A. 2007 Jan 16;104(3):1051-6. doi: 10.1073/pnas.0610080104. Epub 2007 Jan 10. PMID: 17215372; PMCID: PMC1783362.
 
-The API returns an error if any one of these parameters is missing.
-
-The service is designed in a generic manner to cater for different models based on the name (similarly to the HuggingFace API) and can be extended to fall back on default models.
-
-If the training is successful, a message is returned indicating the training is successfully completef. A resource is also created on the server where the model is stored for the specific chatbot. That model can be loaded and used for predictions.
-
-Here is a sample run in Postman. The sample data used is _data/sample_train.json_.
-
-![](./figs/training.png)
-
-    /predict
-This is the request to perform prediction on new data. The input is a natural language text and the prediction is an intent. To invoke this service navigate to: _localhost:12345/predict_.
-
-Mandatory parameters are:
-* **bot_id:** string representation of the chatbot identifier.
-* **model_name:** string name of classification model. For this version, HuggingFace models have been considered but are easily extensible to other machine or deep learning models. 
-* **sentences:** a list of objects containing natural language text that needs to be classified as intent.
-
-The API returns an error if any one of these parameters is missing.
-
-If the model doesn't exist, the service will return an error message stating that no such model can be found. This case requires making a **/train** request before performing predictions.
-
-If the prediction is successful, the service returns a message contaaining the list of predicted intents for the input texts.
-
-Here is a sample run in Postman. The sample data used is _data/sample_predict.json_.
-
-![](./figs/prediction.png)
+Below, the list of the used attributes used to apply machine learning algorythms:
+* Species: name of the species
+* Order: lower taxonomic rank
+* Genus: higher taxonomic rank
+* Vore: Is it carnivore, omnivore, or herbivore?
+* Conservation: the conservation status of the mammal in the International Union for
+* Conservation: of Nature categories
+* BodyWt: body weight (kg)
+* BrainWt: brain weight (g)
+* LifeSpan: maximum life span (years)
+* Gestation: gestation time (days)
+* Predation: predation index (1-5) 
+* Exposure:  sleep exposure index (1-5) 
+* Danger:  overall danger index (1-5) 
+* TotalSleep: total sleep, sum of slow wave and paradoxical sleep (hrs/day)
+* Awake: amount of time spent awake (hrs/day, Awake=24-TotalSleep)
+* NonDreaming: slow wave ("nondreaming") sleep (hrs/day)
+* Dreaming: paradoxical ("dreaming") sleep (hrs/day) 
 
 ## Enhancements
 

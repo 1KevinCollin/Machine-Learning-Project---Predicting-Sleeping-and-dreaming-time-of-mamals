@@ -60,14 +60,9 @@ To enhance this dataset, we decided to add the family from the taxonomy for each
 
 ## Enhancements
 
-This version is designed as a proof-of-concept and has been tested on a sample run using very small datasets because of hardware memory constraints. It is by no means a finalized version of the service yet it contains the major components to scale it. Some interesting enhancements may be:
-* Packaging the service (using Docker) for easier deployment.
-* Extending the available models.
-* Adding a GUI for easier dataset upload.
-* Extending to more datasets.
-* Catering for different models using a cloud repository (ElasticSearch, AWS) or a dedicated database to avoid managing many resource directories on the cloud.
-* Tackling data imbalance: the present version undersamples to the least represented intent, but other methods can be implemented before the training/test split.
-* Tackling encoding issues: normalizing the datasets since the input text is received in natural language.
+* If the scientific community were to create a larger and more robust dataset in the future, we could improve our predictions of TotalSleep or Dreaming, by adding more mamals.
+* We could also enhance the process of filling in missing values using libraries from scikit-learn, such as sklearn.impute.SimpleImputer or sklearn.impute.KNNImputer, to obtain a more robust dataset. 
+
 
 ## References
 

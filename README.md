@@ -26,10 +26,10 @@ python app.py
 ## Functionality
 
 This project is plit in 4 repositories parts :
-* 1. Data : The used dataset
-* 2. Sleeping time prediction : three programs that predict the sleeping time of a mammal, based on three different methods to fill the missing values
-* 3. Dreaming Time prediction : one program that predict the dreaming time of a mammal
-* 4. Other correlations explanation : one program that study the relations between general, ecological biological and sleep attributes of a mamal
+* Data : The used dataset
+* Sleeping time prediction : three programs that predict the sleeping time of a mammal, based on three different methods to fill the missing values
+* Dreaming Time prediction : one program that predict the dreaming time of a mammal
+* Other correlations explanation : one program that study the relations between general, ecological biological and sleep attributes of a mamal
 
 The data at our disposal to make predictions are from two scientific papers :
 * Allison T, Cicchetti DV. Sleep in mammals: ecological and constitutional correlates. Science. 1976 Nov 12;194(4266):732-4. doi: 10.1126/science.982039. PMID: 982039.

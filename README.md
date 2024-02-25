@@ -1,5 +1,5 @@
-# intent_classifier
-A simple API that allows chatbot users to train intent classification models as a service using personal data.
+# Machine Learning Porject - Sleeping and dreaming time prediction for mamals
+A machine learning project to predict the sleeping and dreaming time of mamals.
 
 ## Installation (local)
 

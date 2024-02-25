@@ -3,8 +3,6 @@ A machine learning project to predict the sleeping and dreaming time of mamals.
 
 ## Installation (local)
 
-* Activate a virtual environment (this version was tested with python 3.6)
-
 * Install requirements for Sleeping time prediction
 ```
 pip install -r requirements-Dreaming-time-prediction.txt.txt

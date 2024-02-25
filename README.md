@@ -5,7 +5,15 @@ A machine learning project to predict the sleeping and dreaming time of mamals.
 
 * Install requirements for Sleeping time prediction
 ```
-pip install -r requirements-Dreaming-time-prediction.txt.txt
+pip install -r requirements-Sleeping_time_prediction.txt
+```
+* Install requirements for Dreaming Time prediction
+```
+pip install -r requirements-Dreaming-time-prediction.txt
+```
+* Install requirements for Other correlations explanation
+```
+pip install -r requirements-Other_correlations_explanation.txt
 ```
 ---
 
@@ -13,10 +21,6 @@ pip install -r requirements-Dreaming-time-prediction.txt.txt
 ```
 python app.py
 ```
----
-
-**NOTE:**
-The present version was tested with CUDA 10.1 and the following torch installation: ___conda install pytorch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2 cudatoolkit=10.1 -c pytorch___
 
 ---
 

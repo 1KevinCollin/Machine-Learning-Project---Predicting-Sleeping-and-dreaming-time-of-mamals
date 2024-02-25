@@ -31,10 +31,6 @@ This project is plit in 4 repositories parts :
 * Dreaming Time prediction : one program that predict the dreaming time of a mammal
 * Other correlations explanation : one program that study the relations between general, ecological biological and sleep attributes of a mamal
 
-The data at our disposal to make predictions are from two scientific papers :
-* Allison T, Cicchetti DV. Sleep in mammals: ecological and constitutional correlates. Science. 1976 Nov 12;194(4266):732-4. doi: 10.1126/science.982039. PMID: 982039.
-* Savage VM, West GB. A quantitative, theoretical framework for understanding mammalian sleep. Proc Natl Acad Sci U S A. 2007 Jan 16;104(3):1051-6. doi: 10.1073/pnas.0610080104. Epub 2007 Jan 10. PMID: 17215372; PMCID: PMC1783362.
-
 Below, the list of the used attributes used to apply machine learning algorythms:
 * Species: name of the species
 * Order: lower taxonomic rank
@@ -66,6 +62,13 @@ To enhance this dataset, we decided to add the family from the taxonomy for each
 
 ## References
 
+* [Sleep in mammals: ecological and constitutional correlates](https://pubmed.ncbi.nlm.nih.gov/982039/)
+
+
+* Allison T, Cicchetti DV. Sleep in mammals: ecological and constitutional correlates. Science. 1976 Nov 12;194(4266):732-4. doi: 10.1126/science.982039. PMID: 982039.
+* Savage VM, West GB. A quantitative, theoretical framework for understanding mammalian sleep. Proc Natl Acad Sci U S A. 2007 Jan 16;104(3):1051-6. doi: 10.1073/pnas.0610080104. Epub 2007 Jan 10. PMID: 17215372; PMCID: PMC1783362.
+
+* 
 * [Fine-tuning with custom datasets](https://huggingface.co/transformers/custom_datasets.html)
 * [Hugging Face on Amazon SageMaker Workshop](https://github.com/C24IO/SageMaker-HuggingFace-Workshop)
 * [Turning Machine Learning Models into APIs in Python](https://www.datacamp.com/community/tutorials/machine-learning-models-api-python)

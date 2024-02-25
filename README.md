@@ -27,9 +27,9 @@ python app.py
 
 This project is plit in 4 repositories parts :
 * 1. Data : The used dataset
-* 2. Sleeping time prediction : a program that predict the sleeping time of a mammal
-* 3. Dreaming Time prediction : a program that predict the dreaming time of a mammal
-* 4. Other correlations explanation : a program that study the relations between general, ecological biological and sleep attributes of a mamal
+* 2. Sleeping time prediction : three programs that predict the sleeping time of a mammal, based on three different methods to fill the missing values
+* 3. Dreaming Time prediction : one program that predict the dreaming time of a mammal
+* 4. Other correlations explanation : one program that study the relations between general, ecological biological and sleep attributes of a mamal
 
 The data at our disposal to make predictions are from two scientific papers :
 * Allison T, Cicchetti DV. Sleep in mammals: ecological and constitutional correlates. Science. 1976 Nov 12;194(4266):732-4. doi: 10.1126/science.982039. PMID: 982039.
@@ -53,6 +53,10 @@ Below, the list of the used attributes used to apply machine learning algorythms
 * Awake: amount of time spent awake (hrs/day, Awake=24-TotalSleep)
 * NonDreaming: slow wave ("nondreaming") sleep (hrs/day)
 * Dreaming: paradoxical ("dreaming") sleep (hrs/day) 
+
+To enhance this dataset, we decided to add the family from the taxonomy for each mamal.
+
+
 
 ## Enhancements
 

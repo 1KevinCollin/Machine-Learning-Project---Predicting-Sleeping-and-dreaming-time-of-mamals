@@ -2,6 +2,6 @@
 
 ## Project Description
 
-mettre en *gras*
+mettre en **gras**
 
 ### Installation
